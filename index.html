@@ -9,19 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-<script type="text/javascript">
-    function getEmail(){
-        var inputEmail = document.getElementById("email");
-        var email = inputEmail.value;
-        if(email != ""){
-            alert("Value inside the text box is:" + email +"---");
-        }
-        else{
-            inputEmail.style.borderColor = '#ff0000';
-        }
-    }
-</script>
+    <script type="module" src="/script.js"></script>
 
 </head>
 <body>
@@ -155,7 +143,7 @@
                 <input class="inputEmail" type="email" id="email" name="email" placeholder="Email">
                 <br>
                 <br>
-                <button onclick="getEmail()" class="btn">Invia</button>
+                <button id="pulsante" name="pulsante" class="btn">Invia</button>
             </div>
             <div style="clear:both;"></div>
             <h3>@copyright by Wallami</h3>
